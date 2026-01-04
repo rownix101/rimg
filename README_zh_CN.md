@@ -2,6 +2,8 @@
 
 基于 Cloudflare Pages 的轻量静态随机图床。
 
+[English](/README.md)
+
 ## 项目说明
 - 纯静态图床与随机入口页面。
 - 服务端不做随机，由客户端选择或跳转。
@@ -14,7 +16,7 @@
 
 ## 使用方式
 浏览器直接访问：
-- `https://<your-domain>/random/`
+- `https://rimg.rownix.dev/random/`
 
 嵌入到 HTML：
 ```html
