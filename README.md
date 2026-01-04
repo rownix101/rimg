@@ -2,7 +2,7 @@
 
 Lightweight static random image host for Cloudflare Pages.
 
-Chinese: `README_zh_CN.md`
+[简体中文](/README_zh_CN.md)
 
 ## What this is
 - Pure static image hosting with a random entry page.
@@ -16,7 +16,7 @@ Chinese: `README_zh_CN.md`
 
 ## Usage
 Open in browser:
-- `https://<your-domain>/random/`
+- `https://rimg.rownix.dev/random/`
 
 Embed in HTML:
 ```html
