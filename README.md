@@ -5,30 +5,21 @@ Lightweight static random image host for Cloudflare Pages.
 [简体中文](/README_zh_CN.md)
 
 ## What this is
-- Pure static image hosting with a random entry page.
-- No server-side randomness; clients select or redirect.
+- Static image hosting with a dynamic random redirect.
 
 ## Endpoints
 - `/<image>`: static WebP images under `nature_images/`.
 - `/list.json`: array of image paths.
-- `/random/`: loads `random/random.js` and redirects to a random image.
-- `/random/random.js`: helper script for random selection.
+- `/random`: dynamic redirect to a random image (server-side).
+- `/`: 302 redirect to `/random`.
 
 ## Usage
 Open in browser:
-- `https://rimg.rownix.dev/random/`
+- `https://rimg.rownix.dev/`
 
 Embed in HTML:
 ```html
-<img id="hero" alt="">
-<script src="/random/random.js" data-target="#hero"></script>
-```
-
-Call from JS:
-```js
-randomImage().then((url) => {
-  console.log(url);
-});
+<img src="/random" alt="">
 ```
 
 ## Caching
