@@ -1,0 +1,6 @@
+/list.json
+  Cache-Control: public, max-age=10800
+/nature_images/*
+  Cache-Control: public, max-age=31536000, immutable
+/random/*
+  Cache-Control: no-store
